@@ -1,0 +1,8 @@
+{
+  "pergunta": "Se você fosse promovido amanhã, quem conseguiria sustentar seu time sem improviso?",
+  "opcoes": [
+    { "id": "a", "rotulo": "Tenho alguém pronto hoje", "cor": "#16a34a" },
+    { "id": "b", "rotulo": "Tenho alguém com potencial, mas falta experiência", "cor": "#f59e0b" },
+    { "id": "c", "rotulo": "Hoje, eu ficaria preocupado", "cor": "#dc2626" }
+  ]
+}

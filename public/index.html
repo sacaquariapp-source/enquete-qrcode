@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquete</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Enquete ao vivo</div>
+    <h1 id="pergunta">Carregando...</h1>
+    <form id="form">
+      <div id="opcoes" class="opcoes"></div>
+      <button type="submit" id="btnVotar">Votar</button>
+    </form>
+    <div id="confirmacao" class="confirmacao hidden">
+      <p>✅ Voto registrado! Obrigado por participar.</p>
+      <button id="btnOutro" type="button" class="secundario">Votar novamente</button>
+    </div>
+    <p class="aviso">Escolha única — 1 voto por dispositivo.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

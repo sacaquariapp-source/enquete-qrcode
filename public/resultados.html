@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultados — Enquete</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body class="tela-resultados">
+  <main class="painel">
+    <header class="cabecalho">
+      <div>
+        <div class="badge">Resultado ao vivo</div>
+        <h1 id="pergunta">Carregando...</h1>
+        <p class="total"><strong id="total">0</strong> votos</p>
+      </div>
+      <div class="acoes">
+        <button id="btnZerar" class="secundario" type="button">Zerar votos</button>
+      </div>
+    </header>
+
+    <div class="grade">
+      <section class="pizza-box">
+        <canvas id="pizza"></canvas>
+      </section>
+
+      <aside class="lateral">
+        <div class="qr-box">
+          <p class="qr-titulo">Escaneie para votar</p>
+          <div id="qrcode"></div>
+          <p class="qr-url" id="qrUrl"></p>
+        </div>
+        <ul id="legenda" class="legenda"></ul>
+      </aside>
+    </div>
+  </main>
+
+  <script src="resultados.js"></script>
+</body>
+</html>
